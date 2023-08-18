@@ -1,18 +1,33 @@
-# Vue 3 + TypeScript + Vite
+# CodeCrafters Vue Template
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## What dependencies did we install and what did we do in this template?
 
-## Recommended IDE Setup
+### TypeScript
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+TypeScript is a statically typed language that allows you to catch many errors during the coding phase, such as type mismatches and undefined variables. This reduces runtime errors, improves code quality, speeds up development, and provides better code autocompletion and editor support.
 
-## Type Support For `.vue` Imports in TS
+With type information, development tools like VS Code can offer powerful code intelligence, autocompletion, and error detection. This significantly enhances development efficiency.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+### Axios
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+Axios is a widely used JavaScript library for making network requests in both browsers and Node.js. It stands out from other libraries with its Promise-based approach, supporting both client-side and server-side requests. Its interceptors allow global request and response handling, and it automatically parses responses as JSON. Axios offers unified error handling and supports request cancellation with tokens. It simplifies URL and query parameter handling, and provides progress tracking for file uploads and downloads. Compared to alternatives like Fetch API or jQuery's Ajax, Axios offers a comprehensive set of features, making it a preferred choice for many developers, while the final selection should depend on project needs and personal preferences.
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+### VueRouter
+
+A Single Page Application (SPA) is a web app that operates on a single webpage, dynamically updating content for a smoother user experience. SPAs load content without full page reloads, resulting in faster interactions and reduced server load. They enable rich interfaces, support offline functionality, and enhance development workflow. SPAs are characterized by a single HTML page, client-side routing, API-driven data management, and state control. While providing benefits like faster load times and improved user experience, SPAs also face SEO challenges due to dynamic content rendering.
+
+### Pinia
+
+Pinia is a state management library for Vue.js applications that offers a minimalistic and scalable approach to managing application state. Built specifically for the Vue 3 composition API, Pinia promotes a clean separation of concerns, facilitates reactive state management, and embraces TypeScript for type safety. It provides a well-defined store structure, encourages modularization, and ensures efficient reactivity tracking, making it a powerful choice for managing complex state in Vue applications.
+
+### Prettier
+
+Prettier is a widely used code formatting tool that automates and enforces consistent code styling in various programming languages. It's particularly popular for JavaScript, TypeScript, and web development. With a focus on opinionated code formatting, Prettier analyzes your code and automatically applies formatting rules, ensuring that your codebase adheres to a unified style without the need for manual adjustments. It's easily integrated into development workflows, improving code readability and minimizing style-related conflicts in collaborative projects.
+
+### Less
+
+Less is a dynamic stylesheet language that extends the capabilities of CSS. It simplifies and enhances the process of writing and managing styles for web applications by introducing features like variables, mixins, nested rules, and mathematical operations. LESS code is compiled into standard CSS that browsers can understand, allowing developers to create more maintainable and efficient stylesheets. By promoting code reuse, modularity, and easier maintenance, LESS facilitates the creation of responsive and visually appealing web designs while reducing redundancy in CSS code.
+
+### Path Resolve Alias "@"
+
+Since the introduction of `vue-cli`, developers have become accustomed to using the "@" symbol to refer to the "src" directory. However, with the advent of Vite, the Vite official team has removed this default configuration for Vue development, requiring developers to use relative paths for configuration. This template comes pre-configured with this setting, enabling developers to quickly get started with Vite development more efficiently.
